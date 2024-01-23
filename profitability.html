@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Defence Public Sector Undertakings</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="fontawesome-free-5.15.4-web\css\all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <!-- <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" /> -->
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid position-relative bg-white d-flex p-0">
+     
+        <!-- Sidebar Start -->
+        <div class="sidebar pe-4 pb-3 new_color-2">
+            <nav class="navbar navbar-light">
+                <a href="index.html" class="navbar-brand mx-4 mb-3">
+                    <h3 class="text-primary"><i class="fa fa-hashtag me-2"></i>DPSU</h3>
+                </a>
+                <div class="d-flex align-items-center ms-4 mb-4 me-2">
+                    <div class="position-relative">
+                        <img class="rounded-circle" src="img/img.png" alt="" style="width: 40px; height: 40px;">
+                        <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
+                    </div>
+                    <div class="ms-3">
+                        <h6 class="mb-0">DPSU</h6>
+                        <span>Admin</span>
+                    </div>
+                </div>
+                <div class="navbar-nav w-100">
+                    <a href="index.html" class="nav-item nav-link "><i class="fa fa-th me-2"></i>Dashboard</a>
+                    <a href="Production_Performance.html" class="nav-item nav-link "><i class="fa fa-folder-plus me-2"></i></i>Production Performance</a>
+                    <a href="order_book.html" class="nav-item nav-link "><i class="fa fa-book me-2"></i>Order Book Position</a>
+                    <a href="profitability.html" class="nav-item nav-link active"><i class="fa fa-chart-line me-2"></i>Profitability (PAT)</a>
+                    <a href="Indigenization.html" class="nav-item nav-link "><i class="fa fa-folder-plus me-2"></i>Indigenization</a>
+                    <a href="Modernisation_Capex.html" class="nav-item nav-link "><i class="fa fa-folder-plus me-2"></i>Modernisation-Capex</a>
+                    <a href="export.html" class="nav-item nav-link "><i class="fa fa-file me-2"></i>Export Performance</a>
+                    <a href="Modernisation_Projects.html" class="nav-item nav-link "><i class="fa fa-file-export me-2"></i>Modernisation Projects</a>
+                    <a href="Idex_Make_Projects.html" class="nav-item nav-link "><i class="fa fa-file me-2"></i>Idex & Make-Projects</a>
+                    <a href="new_projects.html" class="nav-item nav-link "><i class="fa fa-crown me-2"></i>New Projects</a>
+                    <a href="major_achievment.html" class="nav-item nav-link "><i class="fa fa-tachometer-alt me-2"></i>Major Achievements</a>     
+                </div>
+            </nav>
+        </div>
+        <!-- Sidebar End -->
+
+        <!-- Content Start -->
+        <div class="content">
+            <!-- Navbar Start -->
+            <nav class="navbar navbar-expand bg-light navbar-light sticky-top px-4 py-0">
+                <a href="index.html" class="navbar-brand d-flex d-none d-sm-none me-4">
+                    <h2 class="text-primary mb-0"><i class="fa fa-hashtag"></i></h2>
+                </a>
+                <a href="#" class="sidebar-toggler flex-shrink-0">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <!-- <form class="d-none d-md-flex ms-4">
+                    <input class="form-control border-0" type="search" placeholder="Search">
+                </form> -->
+                <div class="navbar-nav align-items-center ms-auto top_navbar">
+                    <a href="index.html" class="nav-item nav-link active"><i class="fa fa-home me-2"></i>Dashboard</a>
+                    <a href="Production_Performance.html" class="nav-item nav-link "><i class="fa fa-th me-2"></i>Production Performance</a>
+                    <a href="profitability.html" class="nav-item nav-link "><i class="fa fa-th me-2"></i>Profitability</a>
+                    <a href="major_achievment.html" class="nav-item nav-link "><i class="fa fa-th me-2"></i>Major Achievements</a>
+                </div>
+            </nav>
+            <!-- Navbar End -->
+
+            <!-- Sales Chart Start -->
+            <div class="container-fluid pt-4 px-4">
+                <div class="row g-4">
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-light rounded h-100 p-4">
+                            <figure class="highcharts-figure">
+                                <div id="pie_chart"></div>
+                                <p class="highcharts-description">
+                                    You can see through the Pie chart.
+                                </p>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-light rounded h-100 p-4">
+                            <figure class="highcharts-figure">
+                                <div id="bar_chart"></div>
+                                <p class="highcharts-description">
+                                    You can see through the Bar chart.
+                                </p>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Sales Chart End -->
+
+            <!-- -------------- INPUT DATA ---------- -->
+
+ <!-- - table --- -->
+ <div class="container-fluid pt-4 px-4">
+    <div class="bg-light text-center rounded p-4">
+        <div class="col-12">
+            <div class="bg-light rounded h-100 p-4">
+                
+                   <h4 class="mb-3"><i class="fa fa-plus me-2"></i>Add Profitability</h4>
+                    <div id="accordion">
+                      <div class="card">
+                            <div class="card-header" data-bs-toggle="collapse" href="#collapseOne">
+                                <p>Profitability (PAT)</p>
+                                <!-- <a class="btn btn-block" data-bs-toggle="collapse" href="#collapseOne">
+                                    Collapsible Group Item #1
+                                </a> -->
+                            </div>
+                            <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                   
+                                                    <th scope="col">Name of DPSU</th>
+                                                    <th scope="col">Amount</th>
+                                                    <th scope="col">Financial year</th>
+                                                    <th scope="col">% Change over previous FY</th>
+                                                    <th scope="col">Quarter 1/2/3/4</th>
+                                                    <th scope="col">Remarks</th>
+                                                    <th scope="col">Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <select class="form-select mb-3" aria-label="Default select example">
+                                                            <option selected>Select DPSU</option>
+                                                            <option value="1">HAL</option>
+                                                            <option value="2">BEL</option>
+                                                            <option value="3">BEML</option>
+                                                            <option value="1">AVNL</option>
+                                                            <option value="2">BOL</option>
+                                                            <option value="3">AWEIL</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <form>
+                                                            <div class="mb-3">
+                                                                <input type="text" class="form-control" id="text"
+                                                                    aria-describedby="text">
+                                                            </div>
+                                                        </form>
+                                                    </td>
+                                                    <td>
+                                                        <select class="form-select mb-3" aria-label="Default select example">
+                                                            <option selected>Select Year</option>
+                                                            <option value="1">2022-2023</option>
+                                                            <option value="2">2023-2024</option>                                                          
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <select class="form-select mb-3" aria-label="Default select example">
+                                                            <option selected>Select previous FY</option>
+                                                            <option value="1">2022-2023</option>
+                                                            <option value="2">2023-2024</option>                                                          
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <select class="form-select mb-3" aria-label="Default select example">
+                                                            <option selected>Select Quarter 1/2/3/4</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option> 
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>                                                          
+                                                        </select>
+                                                    </td>
+                                                    
+                                                    <td> 
+                                                        <div class="form-floating">
+                                                            <textarea class="form-control" rows="1" id="comment" name="text"></textarea>                                                       
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button class="btn btn-primary">
+                                                        <i class="fa fa-plus"></i> Add
+                                                    </button>
+                                                </td>
+                                                   
+                                                </tr>
+                                                
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                      </div>
+                      
+                    </div>
+                  
+            </div>
+        </div>
+    </div>
+</div>
+
+            <!-- - table --- -->
+            <div class="container-fluid pt-4 px-4">
+                <div class="bg-light text-center rounded p-4">
+                    <div class="col-12">
+                        <div class="bg-light rounded h-100 p-4">
+                            <h4 class="mb-3"><i class="fa fa-table me-2"></i> View Profitability</h4>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">S.No</th>
+                                            <th scope="col">Name of DPSU</th>
+                                                    <th scope="col">Amount</th>
+                                                    <th scope="col">Financial year</th>
+                                                    <th scope="col">% Change over previous FY</th>
+                                                    <th scope="col">Quarter 1/2/3/4</th>
+                                                    <th scope="col">Remarks</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>HINDUSTAN AERONAUTICS LIMITED (HAL)</td>
+                                            <td>25478</td>
+                                            <td>2023-2024</td>
+                                            <td>2022-2023</td>
+                                            <td>4</td>
+                                           
+                                            <td>abc.com</td>
+                                           
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+
+
+           
+
+
+            <!-- Footer Start -->
+            <div class="container-fluid pt-4 px-4">
+                <div class="bg-light rounded-top p-4">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            &copy; <a href="#">Ministry of defence </a>, All Right Reserved 2024. 
+                        </div>
+                        <!-- <div class="col-12 col-sm-6 text-center text-sm-end">
+                           
+                            Designed By <a href="#">HTML Codex</a>
+                        </br>
+                        Distributed By <a class="border-bottom" href="#" target="_blank">ThemeWagon</a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End -->
+        </div>
+        <!-- Content End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+   
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/chart/chart.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <script src="js/highcharts.js"></script>
+<script src="js/exporting.js"></script>
+<script src="js/export-data.js"></script>
+<script src="js/accessibility.js"></script>
+
+<script src="js/main.js"></script>
+
+    <!-- Template Javascript -->
+    <script>
+        (function (H) {
+    H.seriesTypes.pie.prototype.animate = function (init) {
+        const series = this,
+            chart = series.chart,
+            points = series.points,
+            {
+                animation
+            } = series.options,
+            {
+                startAngleRad
+            } = series;
+
+        function fanAnimate(point, startAngleRad) {
+            const graphic = point.graphic,
+                args = point.shapeArgs;
+
+            if (graphic && args) {
+
+                graphic
+                    // Set inital animation values
+                    .attr({
+                        start: startAngleRad,
+                        end: startAngleRad,
+                        opacity: 1
+                    })
+                    // Animate to the final position
+                    .animate({
+                        start: args.start,
+                        end: args.end
+                    }, {
+                        duration: animation.duration / points.length
+                    }, function () {
+                        // On complete, start animating the next point
+                        if (points[point.index + 1]) {
+                            fanAnimate(points[point.index + 1], args.end);
+                        }
+                        // On the last point, fade in the data labels, then
+                        // apply the inner size
+                        if (point.index === series.points.length - 1) {
+                            series.dataLabelsGroup.animate({
+                                opacity: 1
+                            },
+                            void 0,
+                            function () {
+                                points.forEach(point => {
+                                    point.opacity = 1;
+                                });
+                                series.update({
+                                    enableMouseTracking: true
+                                }, false);
+                                chart.update({
+                                    plotOptions: {
+                                        pie: {
+                                            innerSize: '40%',
+                                            borderRadius: 8
+                                        }
+                                    }
+                                });
+                            });
+                        }
+                    });
+            }
+        }
+
+        if (init) {
+            // Hide points on init
+            points.forEach(point => {
+                point.opacity = 0;
+            });
+        } else {
+            fanAnimate(points[0], startAngleRad);
+        }
+    };
+}(Highcharts));
+
+Highcharts.chart('pie_chart', {
+    chart: {
+        type: 'pie'
+    },
+    title: {
+        text: 'Defence Public Sector Undertakings',
+        align: 'left'
+    },
+    subtitle: {
+        text: 'Custom animation of pie series',
+        align: 'left'
+    },
+    tooltip: {
+        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    accessibility: {
+        point: {
+            valueSuffix: '%'
+        }
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            borderWidth: 2,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: true,
+                format: '<b>{point.name}</b><br>{point.percentage}%',
+                distance: 20
+            }
+        }
+    },
+    series: [{
+        // Disable mouse tracking on load, enable after custom animation
+        enableMouseTracking: false,
+        animation: {
+            duration: 2000
+        },
+        colorByPoint: true,
+        data: [{
+            name: 'HAL',
+            y: 21.3
+        }, {
+            name: 'BEL',
+            y: 18.7
+        }, {
+            name: 'MEML',
+            y: 20.2
+        }, {
+            name: 'AVNL',
+            y: 14.2
+        }, {
+            name: 'BOL',
+            y: 25.6
+        },
+        {
+            name: 'AWEIL',
+            y: 25.6
+        }
+    ]
+    }]
+});
+
+    </script>
+
+
+    <!-- ================ bar chart js ============= -->
+
+    <script>
+        Highcharts.chart('bar_chart', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'Defence Public Sector Undertakings',
+        align: 'left'
+    },
+    subtitle: {
+        text:
+            'Source: <a target="_blank" ' +
+            'href="',
+        align: 'left'
+    },
+    xAxis: {
+        categories: ['2020-2021', '2021-2022', '2022-2023', '2023-2024'],
+        crosshair: true,
+        accessibility: {
+            description: 'Years'
+        }
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: '1000 metric tons (MT)'
+        }
+    },
+    tooltip: {
+        valueSuffix: ' (1000 MT)'
+    },
+    plotOptions: {
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0
+        }
+    },
+    series: [
+        {
+            name: 'DPSU',
+            data: [406292, 260000, 107000, 68300]
+        }
+        
+    ]
+});
+
+    </script>
+    
+    
+</body>
+
+</html>
